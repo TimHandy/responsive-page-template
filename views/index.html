@@ -1,53 +1,139 @@
-<!-- This is a static file -->
-<!-- served from your routes in server.js -->
-
-<!-- You might want to try something fancier: -->
-<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
-<!-- pug: https://pugjs.org/ -->
-<!-- haml: http://haml.info/ -->
-<!-- hbs(handlebars): http://handlebarsjs.com/ -->
 
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Welcome to Glitch!</title>
-    <meta name="description" content="A cool thing made with Glitch">
+    <title>Responsive CSS</title>
+    <meta name="description" content="Responsive CSS">
     <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
   </head>
   <body>
     <header>
-      <h1>
-        A Dream of the Future
-      </h1>
+      
+      <div class="phone-container">
+        <div class="phone-top"><div class="phone-speaker"></div></div>
+          <div class="phone-screen"><img src="https://cdn.glitch.com/f87844b6-e25b-4dfb-9832-c273654c0f7a%2Fscreen.jpg?1490109220614" alt="phone"></div>
+        <div class="phone-bottom"><div><div class="phone-button"></div></div></div>
+      </div>
+      <h1>Responsive CSS</h1>
+      <p>
+        I cloned a template design<br />by HTML5UP using my own CSS<br />to resemble the features of the <a href="https://html5up.net/fractal">original</a>
+      </p>
+      <button>
+        <i class="fa fa-download" aria-hidden="true"></i> Download
+      </button>
+      <button>
+       <i class="fa fa-chevron-down" aria-hidden="true"></i> Learn More
+      </button>
     </header>
 
     <main>
-      <p class="bold">Oh hi,</p>
-      <p>Tell me your hopes and dreams:</p>
-      <form>
-        <input type="text" maxlength="100" placeholder="Dreams!">
-        <button type="submit">Submit</button>
-      </form>
-      <section class="dreams">
-        <ul id="dreams">
-        </ul>
+      <section class="intro">
+        <h2>
+          Introduction
+        </h2>
+        <p>
+          Sed ipsum magna lorem tempus amet vehicula et gravida elementum
+        </p>
+        <div>
+          <i class="fa fa-camera-retro" aria-hidden="true"></i>
+        </div>
+        <div>
+          <i class="fa fa-refresh" aria-hidden="true"></i>
+        </div>
+        <div>
+          <i class="fa fa-cloud" aria-hidden="true"></i>
+        </div>
+      </section>
+  
+      <section class="features">
+        <h2>
+          Features
+        </h2>
+        <div class="feature1">
+          <img src="https://cdn.glitch.com/f87844b6-e25b-4dfb-9832-c273654c0f7a%2Fpic01.jpg?1490109220682" alt="feature1">
+          <h2>
+            Magna sed ultrices
+          </h2>
+          <p>
+            Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.
+          </p>
+        </div>
+        <div class="feature2">
+          <img src="https://cdn.glitch.com/f87844b6-e25b-4dfb-9832-c273654c0f7a%2Fpic02.jpg?1490109220713" alt="feature2">
+          <h2>
+            Ultrices nullam aliquam
+          </h2>
+          <p>
+            Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.
+          </p>
+        </div>
+        <div class="feature3">
+          <img src="https://cdn.glitch.com/f87844b6-e25b-4dfb-9832-c273654c0f7a%2Fpic03.jpg?1490109220541" alt="feature3">
+          <h2>
+            Aliquam sed magna
+          </h2>
+          <p>
+            Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.
+          </p>
+        </div>        
+      </section>
+      <section class="sub-features">
+        <h2>
+          Sub-Features
+        </h2>
+        <div>
+          <i class="fa fa-camera-retro" aria-hidden="true"></i> Lorem impsum
+        </div>
+        <div>
+          <i class="fa fa-refresh" aria-hidden="true"></i> Lorem impsum
+        </div>
+        <div>
+          <i class="fa fa-cloud" aria-hidden="true"></i> Lorem impsum
+        </div>
+        <div>
+          <i class="fa fa-code" aria-hidden="true"></i> Lorem impsum
+        </div>
+        <div>
+          <i class="fa fa-desktop" aria-hidden="true"></i> Lorem impsum
+        </div>
+      </section>
+      <section class="call-to-action">
+        <h2>
+          Magna leo sapien gravida
+        </h2>
+        <p>
+          Gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo sapien iaculis efficitur.
+        </p>
+      <button>
+        <i class="fa fa-download" aria-hidden="true"></i> Download
+      </button>
+      <button>
+       Learn More
+      </button>
       </section>
     </main>
 
     <footer>
-      <a href="https://glitch.com">
-        Remix this in Glitch
-      </a>
+      <h2>
+          Footer
+      </h2>
+      <div class="social">
+        <a><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      </div>
+      
+      <div class="copyright">
+        &copy; Untitled. Credits: Tim Handy
+      </div>
     </footer>
-
-    <!-- Your web-app is https, so your scripts need to be too -->
-    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
-            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
-            crossorigin="anonymous"></script>
+    
     <script src="/client.js"></script>
 
   </body>

@@ -1,8 +1,62 @@
-/* styles */
-/* called by your view template */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-/* You might want to try something fancier: */
-/* less: http://lesscss.org/ */
+html, body, div, span, applet, object, iframe,
+blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0; 
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END OF RESET */
+
+a {
+  color: #fff;
+  text-decoration: dotted underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
 
 * {
   box-sizing: border-box;
@@ -10,49 +64,214 @@
 
 body {
   font-family: helvetica, arial, sans-serif;
-  margin: 25px;
+  font-weight: normal;
+  line-height: 1.5em;
+  letter-spacing: 0.015em;
+  margin: 0; 
+  text-align: center;
+  min-width: 320px;
 }
 
-h1 {
-  font-weight: bold;
-  color: pink;
+header {
+  background-color: #4696e5;
+  padding: 30px 10px;
 }
 
-.bold {
-  font-weight: bold;
+.phone-container {
+  max-width: 200px;
+  width: 30%;
+  margin: 0 auto;
 }
 
-p {
-  max-width: 600px;
+.phone-container img {
+  max-width: 100%;
+  border-left: 2px solid rgba(255, 255, 255, 0.25);
+  border-right: 2px solid rgba(255, 255, 255, 0.25);  
+  margin:0;
 }
 
-form {
-  margin-bottom: 25px;
-  padding: 15px;
-  background-color: cyan;
-  display: inline-block;
-  width: 100%;
-  max-width: 340px;
-  border-radius: 3px;
+.phone-top{
+  padding: 10% 0;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px 10px 0 0;
 }
 
-input {
+.phone-screen {
+  line-height: 0;
+}
+
+.phone-bottom{
+  padding: 5% 0; 
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 0 0 10px 10px ;  
+}
+
+.phone-speaker {
+  margin: 0 auto;
+  width: 15%;
+  background: rgba(255, 255, 255, 0.25);
+  height: 2px;
+  border-radius: 2px;
+}
+
+.phone-button {
+  margin: 0 auto;
+  width: 1.2em; 
+  height: 1.2em;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+}
+
+header h1 {
+  font-size: 2em;
+  margin-top: 35px;
+  color: white;
+}
+
+header p {
+  color: #d0e4f8;
+  font-size: 0.9em;
+}
+
+header button {
   display: block;
-  margin-bottom: 10px;
-  padding: 5px;
   width: 100%;
-  border: 1px solid lightgrey;
-  border-radius: 3px;
+  margin-bottom: 15px;
+  padding: 15px 0;
   font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+  font-weight: bold;
 }
 
-button {
+header button:nth-child(even){
+  background-color: white;
+  color: #4696e5;
+}
+
+header button:nth-child(odd){
+  background: none;
+  color: white;
+}
+
+.intro {
+  background: #fbfbfb;
+  border-bottom: 2px solid rgb(238, 238, 238);
+}
+
+.intro h2 {
+  margin: 0;
+  line-height: 0;
+  text-indent: -10000px;
+}
+
+.intro p {
+  font-size: 1.2em;
+  color: #828282;
+  margin: 30px 0;
+}
+
+.intro div {
+  display: inline-block;
+  color: #e0e0e0;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.intro div:nth-child(even) {
+  border-top: 2px solid #e0e0e0;
+  padding: 25px 20px 0 20px;
+}
+
+.features {
+  color: #828282;
+  padding: 0px 10px;
+}
+
+.features > div {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #eee;
+}
+
+.features > h2 {
+  margin: 0;
+  line-height: 0;
+  text-indent: -10000px;
+}
+
+.features img {
+  margin: 30px 0;
+  width: 60%;
+  border-radius: 50%;
+  padding: 4px;
+  border: 1px solid #eee;
+}
+
+.features h2 {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.features p {
+  font-size: 1em;
+  color: #bbb;
+}
+
+.sub-features {
+  color: #bbb;
+  border-bottom: 2px solid rgb(238, 238, 238);
+  padding-bottom: 30px;
+}
+
+.sub-features h2 {
+  margin: 0;
+  line-height: 0;
+  text-indent: -10000px;
+}
+
+.sub-features i {
+  color: #e0e0e0;
+  font-size: 1.8em;
+  margin: 10px;
+  vertical-align: middle;
+}
+
+.call-to-action {
+  background: #fbfbfb;
+  color: #828282;
+  padding: 30px 10px;
+}
+
+.call-to-action p:after {
+  content: '';
+  display: block;
+  width: 4em;
+  margin: 20px auto;
+  border-bottom: 2px solid rgb(238, 238, 238)
+}
+
+.call-to-action button {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 15px 0;
   font-size: 16px;
-  border-radius: 3px;
-  background-color: lightgrey;
-  border: 1px solid grey;
-  box-shadow: 2px 2px teal;
+  border-radius: 5px;
+  border: none;
   cursor: pointer;
+  font-weight: bold;
+}
+
+.call-to-action button:nth-child(odd){
+  background-color: #5ca3e8;
+  color: #fff;
+}
+
+.call-to-action button:nth-child(even){
+  background: none;
+  color: grey;
+  border: 2px solid #e6e6e6;
 }
 
 button:hover {
@@ -63,20 +282,158 @@ button:active {
   box-shadow: none;
 }
 
-li {
-  margin-bottom: 5px;
-}
-
 footer {
-  margin-top: 50px;
   padding-top: 25px;
-  border-top: 1px solid lightgrey;
+  border-top: 2px solid rgb(238, 238, 238);
+  background: #f7f7f7;
 }
 
-footer > a {
-  color: #BBBBBB;
+footer a {
+  color: #BBBBBB;  
+  font-size: 2em;
+  margin: 0px 10px;
 }
 
-.nicejob {
-  text-decoration: line-through;
+footer h2 {
+  margin: 0;
+  line-height: 0;
+  text-indent: -10000px;
+}
+
+.social {
+  margin: 30px 0;
+}
+
+.copyright {
+  color: #B0B0B0;  
+  font-size: 0.8em;
+  padding-bottom: 30px;
+}
+
+
+/* #########################  MEDIA QUERIES ######################### */
+
+@media screen and (min-width: 480px) {
+  body button {
+    width: 150px;
+    margin: 0 10px;
+    display: inline-block;
+  }
+  
+  .call-to-action button {
+    width: 150px;
+    margin: 0 10px;
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 737px) {
+  header {
+    padding: 100px 0;
+  }
+  
+  .phone-container {
+    max-width: 210px;
+  }
+  
+  header h1 {
+    font-size: 3em;
+    margin-top: 65px;
+  }
+  
+  header p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+  
+  .intro p {
+    font-size: 1.6em;
+    line-height: 1.6em;
+    padding: 40px 40px 0 40px;
+  }
+  
+  .intro div {
+    font-size: 3em;
+    padding: 25px; 
+  }
+  
+  .features div {
+    padding: 30px 20%;
+  }
+  
+  .features div h2 {
+    font-size: 1.5em;
+  }
+  
+  .features img {
+    width: 25%;
+  }
+  
+  .features div:nth-of-type(odd) img {
+    float: left;
+    margin-right: 30px;
+  }
+  
+  .features div:nth-of-type(even) img {
+    float: right;
+    margin-left: 30px;
+  }
+  
+  .features div:nth-of-type(odd) p, .features div:nth-of-type(odd) h2 {
+    text-align: left;
+  }
+  
+  .features div:nth-of-type(even) p, .features div:nth-of-type(even) h2 {
+    text-align: right;
+  }
+  
+  .features div::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
+  .sub-features {
+    padding: 40px 80px 40px 80px;
+  }
+  
+  .sub-features div {
+    display: inline-block;
+    padding: 0 15px;
+  }
+  
+  .call-to-action {
+    padding: 30px 100px;
+  }
+  
+  .call-to-action h2 {
+    font-size: 1.75em;
+    font-weight: 200;
+  }
+  
+  .call-to-action p {
+    font-size: 1.25em;
+  }
+  
+  .call-to-action p::after {
+    margin: 30px auto;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .phone-container {
+    float: right;
+    margin-right: 25%;
+    margin-left: 5%;
+  }
+
+  header::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
+  header {
+    text-align: right;
+  }
 }
