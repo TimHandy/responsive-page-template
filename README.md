@@ -2,6 +2,8 @@
 
 I cloned a template design by HTML5UP using my own CSS to resemble the features of the original.
 
+https://timhandy.github.io/responsive-page-template/
+
 ## Highlights
 
 - Hidden heading titles for screen readers
